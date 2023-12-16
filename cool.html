@@ -1,0 +1,272 @@
+<html>
+    <head>
+        <title>cool</title>
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="#sec-2" id="about">ABOUT</a>
+    <a href="#sec-3" id="blog">Skills</a>
+    <a href="#sec-4" id="projects">F1</a>
+    <a href="#sec-5" id="contact">Arcade</a>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+<section id="sec-1">
+    <div class="container">
+      <h1 style="color: white; ">WELCOME TO SAMS_MISTAKE</h1> 
+    </div>
+  </section>
+  <section id="sec-2">
+    <div class="container">
+      <div class="box">
+      <h1 style="font-family:SimSun-ExtB; ">ABOUT ME</h1>
+     <br>
+     <span style="font-size: 30px;color:white;font-family: Microsoft New Tai Lue;">HI I am Rushan Saiyed.<br>I am studing computer engineering in Ahmedabad India.<br>I love to Playing Games, Video Editing and And Making  Pages like this.<br><br> Call me SAMS.</span>
+    </div>
+  </div>
+
+  </section>
+  
+
+  <section id="sec-3">
+          <style>
+     .skillbox{
+    width: 70%;
+    padding: 30px 30px 50px;
+    background:white;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}   
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+  
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+
+#html-bar{
+    animation: html-fill 10s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 10s forwards;
+}
+
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+
+#js-bar{
+    animation: js-fill 10s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 60%;
+    }
+}
+
+#jQuery-bar{
+    animation: jQuery-fill 10s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 78%;
+    }
+}
+
+
+            </style>
+            
+            <div class="skillbox">
+              <h2>Languages I Know </h2>
+              <div class="skills">
+                <div class="details">
+                   <span  style="size: 20px;">HTML</span>
+                   <span style="size: 30px;">90%</span>
+                </div>
+                <div class="bar">
+                  <div id="html-bar"></div>
+                </div>
+              </div>
+              <div class="skills">
+                <div class="details">
+                  <span style="size: 30px;">CSS</span>
+                  <span style="size: 30px;">75%</span>
+                 </div>
+                 <div class="bar">
+                   <div id="css-bar"></div>
+                 </div>
+               </div>
+               
+               
+               <div class="skills">
+                <div class="details">
+                  <span style="size: 30px;">Java</span>
+                  <span style="size: 30px;">60%</span>
+                </div>
+               
+                 <div class="bar">
+                 <div id="js-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                  <div class="details">
+                    <span style="size: 30px;">C++</span>
+                    <span style="size: 30px;">78%</span>
+                  </div>
+                  <div class="bar">
+                   <div id="jQuery-bar"></div>
+                   </div>
+                 </div>
+            </div>    
+  </section>
+  <section id="sec-4">
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/wallpaperflare.com_wallpaper (3).jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/wallpaperflare.com_wallpaper (2).jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/wallpaperflare.com_wallpaper (1).jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </section>
+   <section id="sec-5">
+    <div class="container">
+      <div class="video">
+      <video width="1000" height="1000" controls >
+      
+        <source src="images/video3.mp4" type="video/mp4"margin-bottom="20%">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="videobox">
+    <h1 style="color: aliceblue;">Video Editing</h1>
+    <p   style="font-size:20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: aliceblue;" ><br>I Edit Video of gta 5 mostly. I edit these videos in rockstar editer and inshot on my phone.</p>
+  </div>
+    </div>
+  </section>
+   <section id="sec-6">
+    <div class="container">
+      <div class="box">
+      <h1 id="social">FOLLOW ME ON MY SOCIALMEDIA<br></h1>
+      <a href="https://www.youtube.com/channel/UC9K9OI9GVq5atGFplbuAixA" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-snapchat-ghost"></a>
+      <a href="#" class="fa fa-google"></a>
+    </div>
+    </div>
+  </section>
+  
+  
+  </body>
+  </html>
